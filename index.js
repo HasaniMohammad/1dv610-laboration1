@@ -1,5 +1,3 @@
-import { get } from 'node:http'
-import { stdin, stdout } from 'node:process'
 import readline from 'node:readline'
 
 const rl = readline.createInterface({
@@ -7,6 +5,14 @@ const rl = readline.createInterface({
   output: process.stdout
 })
 
+/**
+ * Fetches a historical event that happened on a given month and day.
+ *
+ * @param {number} month - The month of the event, from 1 to 12.
+ * @param {number} day - The day of the month.
+ * @returns {Promise<Object>} A historical event containing information
+ * about the event, such as its year and description.
+ */
 async function getHistoricalEvent(month, day) {
   const url = `https://api.wikimedia.org/feed/v1/wikipedia/en/onthisday/events/${month}/${day}`
 
