@@ -6,7 +6,16 @@ const rl = readline.createInterface({
   output: process.stdout
 })
 
+
+
 rl.question('Enter your name: ', (name) => {
+  const today = new Date()
+
+  const month = today.getMonth() + 1
+  const day = today.getDate()
+
   console.log(`Welcome back, ${name}!`)
+  console.log(`Today is ${month}/${day}`)
+
   rl.close()
 })
