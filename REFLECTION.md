@@ -23,4 +23,4 @@ Svar: Ja, jag använde Chatgpt som stöd under laborationen. Jag använde AI fr�
 Ett exempel på ett prompt jag använde var: "Explain the readline to me, first time i see it. Is it like Java's Scanner?"
 6. Bild eller video
 Bifoga (eller länka till) samma skärmdump/video som du postat i Zulip.
-Svar:<video controls src="MINGW64__c_Users_lenovo_lnu_1dv610_1dv610-laboration1 2026-09-05 22-13-36.mp4" title="Title"></video>
+Svar:[Se video](demo.mp4)
