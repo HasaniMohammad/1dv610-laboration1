@@ -37,9 +37,10 @@ rl.question('Enter your name: ', async (name) => {
 
   const event = await getHistoricalEvent(month, day)
 
-  console.log(frog)
-  console.log(`Welcome back, ${name}!`)
-  console.log(`Today is ${month}/${day}`)
+  console.log(frog + '\n')
+  console.log()
+  console.log(`Welcome back, ${name}!\n`)
+  console.log(`Today is ${day}/${month}\n`)
   console.log(`On this day in ${event.year}`)
 
   console.log(`${event.text}`)
