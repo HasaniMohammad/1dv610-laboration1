@@ -16,7 +16,12 @@ async function getHistoricalEvent(month, day) {
   return data.events[0]
 }
 
-
+const frog = `
+       @..@
+      (----)
+     ( >__< )
+     ^^ ~~ ^^
+`
 
 rl.question('Enter your name: ', async (name) => {
   const today = new Date()
@@ -26,6 +31,7 @@ rl.question('Enter your name: ', async (name) => {
 
   const event = await getHistoricalEvent(month, day)
 
+  console.log(frog)
   console.log(`Welcome back, ${name}!`)
   console.log(`Today is ${month}/${day}`)
   console.log(`On this day in ${event.year}`)
